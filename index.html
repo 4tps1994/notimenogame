@@ -733,7 +733,7 @@
     <button class="sort-btn" data-sort="az" onclick="selectSort(this)">A → Z</button>
   </div>
   <div id="results-header" class="results-header">
-    <div class="results-count" id="count">104</div>
+    <div class="results-count" id="count">113</div>
     <div class="results-label">game trong<br>database</div>
   </div>
   <div id="empty-state" class="empty-state"><span id="empty-msg">Không có game nào khớp.</span></div>
@@ -863,6 +863,16 @@ const RAW = [
   ["Deep Rock Galactic: Rogue Core","Roguelite co-op","Tê Cân Nhắc",0,1,0,2,0,1,"Co-op roguelite theo run dài. Hợp chơi cùng nhóm cố định, không hợp nếu chỉ có 20–30 phút lẻ."],
   ["Heroes of Hammerwatch II","Roguelite dungeon","10 Pixel Indie",0,1,0,1,1,1,"~35h+. Roguelite dungeon pixel co-op. Session dài. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
   ["Road to Vostok","Survival FPS solo","10 Game Tháng 4",0,0,0,1,0,2,"Survival FPS khắc nghiệt, cần tập trung và chấp nhận mất mát. Đây là game cho người muốn commit, không phải giải trí nhanh."],
+  // Thể Loại Tê Chọn — Action (sync từ Game_Database_Merged 06/2026, note do Claude soạn — Tê duyệt)
+  ["Rollerdrome","Hành động / Sports","Thể Loại Tê Chọn — Action",2,2,0,2,2,2,"~5h. Trượt ván kết hợp đấu súng, màn ngắn tính điểm. Dừng tự do sau mỗi màn. Rất linh hoạt cho người bận, nhưng cần phản xạ tốt."],
+  ["Midnight Fight Express","Hành động / Beat'em up","Thể Loại Tê Chọn — Action",2,1,1,2,2,1,"~5h. Beat'em up nhìn từ trên xuống, mỗi màn 2-3 phút. Dừng tự do. Xả stress nhanh sau giờ làm."],
+  ["Bright Memory: Infinite","Hành động / FPS","Thể Loại Tê Chọn — Action",2,2,0,2,2,1,"~2-3h. FPS tốc độ cao, đẹp, một buổi tối là xong. Checkpoint dày. Ngắn đúng nghĩa."],
+  ["Vanquish","Hành động / TPS","Thể Loại Tê Chọn — Action",2,1,0,2,1,2,"~6h. TPS tốc độ cao kinh điển của Platinum. Khó, đòi tập trung. Checkpoint. Hợp người bận thích thử thách gọn."],
+  ["Furi","Hành động / Boss rush","Thể Loại Tê Chọn — Action",2,1,0,2,1,2,"~6h. Boss rush thuần — mỗi trận là một bài kiểm tra phản xạ. Dừng sau mỗi boss. Không dành cho lúc mệt."],
+  ["Devil May Cry 5","Hành động / Hack & slash","Thể Loại Tê Chọn — Action",1,1,1,1,2,2,"~12h. Hack & slash theo mission, mỗi mission 20-30 phút. Checkpoint rõ. Chơi cốt truyện thì gọn, cày style thì dài."],
+  ["Evil West","Hành động / Shooter","Thể Loại Tê Chọn — Action",1,1,2,1,1,1,"~10h. Shooter tuyến tính diệt quỷ miền viễn Tây. Nhịp dễ theo, checkpoint đều. Không grind."],
+  ["Slave Zero X","Hành động / Beat'em up","Thể Loại Tê Chọn — Action",2,1,0,1,2,1,"~7h. Beat'em up 2.5D khó, màn ngắn. Checkpoint. Hợp session ngắn nhưng cần kiên nhẫn với độ khó."],
+  ["Katana ZERO","Hành động / Roguelite","Thể Loại Tê Chọn — Action",2,1,0,0,1,2,"~5h. Hành động một nhát chết, màn vài phút, story tốt. Dừng tự do giữa màn. Text tiếng Anh khá nhiều."],
 ];
 
 // Session map — nguồn: game_sessions.docx (Google Drive)
@@ -970,7 +980,16 @@ const SESSION_MAP = {
   "Windrose": "~90-120 phút",
   "Deep Rock Galactic: Rogue Core": "~60-90 phút",
   "Heroes of Hammerwatch II": "~45-60 phút",
-  "Road to Vostok": "~90-120 phút"
+  "Road to Vostok": "~90-120 phút",
+  "Rollerdrome": "~15-30 phút",
+  "Midnight Fight Express": "~20-30 phút",
+  "Bright Memory: Infinite": "~30-45 phút",
+  "Vanquish": "~45-60 phút",
+  "Furi": "~30-60 phút",
+  "Devil May Cry 5": "~45-60 phút",
+  "Evil West": "~45-60 phút",
+  "Slave Zero X": "~20-30 phút",
+  "Katana ZERO": "~30-45 phút"
 };
 
 const SCORE_LABELS = [
