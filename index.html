@@ -544,8 +544,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
   }
 
@@ -555,6 +554,25 @@
   }
 
   footer a:hover { color: var(--accent); }
+
+  .feedback-line {
+    margin-top: 10px;
+    max-width: 520px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #8f8f8f;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .feedback-line a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 4px;
+  }
+
+  .feedback-line a:hover { text-decoration: underline; }
 
   /* SEARCH */
   .search-section {
@@ -612,6 +630,7 @@
     /* Layout */
     header, .filter-section, .search-section, .results-section { padding-left: 20px; padding-right: 20px; }
     footer { padding: 32px 20px; }
+    .feedback-line { font-size: 12px; line-height: 1.55; max-width: 100%; }
     .games-grid { grid-template-columns: 1fr; }
     .game-card { animation: none; }
     .search-input::placeholder { color: #666; }
@@ -714,10 +733,11 @@
 </section>
 
 <footer>
-  <span>Tê | No Time No Game · v3-jbmono</span>
-  <a href="https://docs.google.com/spreadsheets/d/1crlffTMSz3ippT6ESH7sJx4PVUC3oFsQPm88emjVlLk" target="_blank">
-    Nguồn: Game_Database_Full · Google Drive ↗
-  </a>
+  <span>Tê | No Time No Game</span>
+  <div class="feedback-line">
+    Dữ liệu đang được Tê cập nhật dần. Nếu thấy session, thể loại hoặc ghi chú chưa đúng, góp ý giúp Tê.
+    <a href="https://forms.gle/obs45H7pEADWpkaW6" target="_blank" rel="noopener">Góp ý / Báo sai thông tin ↗</a>
+  </div>
 </footer>
 
 <script>
