@@ -873,6 +873,17 @@ const RAW = [
   ["Evil West","Hành động / Shooter","Thể Loại Tê Chọn — Action",1,1,2,1,1,1,"~10h. Shooter tuyến tính diệt quỷ miền viễn Tây. Nhịp dễ theo, checkpoint đều. Không grind."],
   ["Slave Zero X","Hành động / Beat'em up","Thể Loại Tê Chọn — Action",2,1,0,1,2,1,"~7h. Beat'em up 2.5D khó, màn ngắn. Checkpoint. Hợp session ngắn nhưng cần kiên nhẫn với độ khó."],
   ["Katana ZERO","Hành động / Roguelite","Thể Loại Tê Chọn — Action",2,1,0,0,1,2,"~5h. Hành động một nhát chết, màn vài phút, story tốt. Dừng tự do giữa màn. Text tiếng Anh khá nhiều."],
+  // Bullet Fest 2026
+  ["KILL KNIGHT","Arcade shooter / Arena","Bullet Fest 2026",2,2,0,2,2,2,"~2h clear. 5 arena cố định, không roguelite, không grind. 15–30 phút/level là một session độc lập. Vào, làm, ra. 93% Steam.",true],
+  ["20 Minutes Till Dawn","Roguelite survival bắn súng","Bullet Fest 2026",1,1,1,2,2,1,"Run 10–20 phút. Quickplay 10 phút. Vampire Survivors nhưng phải tự aim. Solo dev flanne. Dừng sau bất kỳ run nào."],
+  ["Minishoot' Adventures","Twin-stick shooter / Khám phá","Bullet Fest 2026",2,2,1,2,2,2,"7–10h total, save tự do. Twin-stick + Zelda exploration. 98% Steam / 3.7K reviews. Duy nhất trong list có điểm kết thật sự.",true],
+  ["Enter the Gungeon","Bullet hell / Roguelike","Bullet Fest 2026",0,1,0,2,1,2,"~40 phút/run. Benchmark bullet hell 2016. FREE trên Steam. 95% / 38K reviews. Bẫy thời gian đẹp nhất — khó dừng ở 1 run."],
+  ["Gunfire Reborn","Roguelite FPS co-op","Bullet Fest 2026",1,1,1,2,1,1,"45–90 phút/run. FPS roguelite co-op 4 người. 93% / 85K reviews. Hợp nhất khi có squad cố định. Solo cũng ổn nhưng mất đi nửa hay."],
+  ["AK-xolotl: Together","Roguelite bắn súng co-op","Bullet Fest 2026",1,1,1,2,2,1,"Run 15–20 phút. Co-op local/online 2 người. Cute. 74% Steam — thấp nhất list. Hợp chill co-op nhẹ, không phải game depth cao."],
+  ["Rabbit and Steel","Bullet hell / Roguelite MMO-style","Bullet Fest 2026",1,1,0,2,1,2,"30–45 phút/run. Lấy cảm hứng từ MMO raid. 1 người làm. 97% / 8.3K reviews. Co-op 1–4 người. Solo được — nhưng game hay hơn hẳn khi có bạn.",true],
+  ["Apocalypse Party","Roguelite survival co-op","Bullet Fest 2026",1,1,2,2,2,1,"Run ~30–40 phút. Cùng dev 20 Minutes Till Dawn (flanne). Co-op 3 người online. 450 talents. Medieval survivor-like."],
+  ["Arms of God","Bullet heaven autoshooter","Bullet Fest 2026",2,2,2,2,2,1,"Early Access 8/6/2026. Autoshooter 60 level cố định, 3–4h clear. 3–5 phút/level. Không cần aim. Solo dev từ Poland."],
+  ["Touhou: Hero of Ice Fairy","Bullet hell / Boss rush / Roguelite","Bullet Fest 2026",1,1,0,2,1,2,"Run 20–40 phút. Bullet hell boss rush fangame Touhou. GAMEPULSE. 97% / 1.182 reviews. Không cần biết lore Touhou trước."],
 ];
 
 // Session map — nguồn: game_sessions.docx (Google Drive)
@@ -989,7 +1000,17 @@ const SESSION_MAP = {
   "Devil May Cry 5": "~45-60 phút",
   "Evil West": "~45-60 phút",
   "Slave Zero X": "~20-30 phút",
-  "Katana ZERO": "~30-45 phút"
+  "Katana ZERO": "~30-45 phút",
+  "KILL KNIGHT": "~15-30 phút/level",
+  "20 Minutes Till Dawn": "~10-20 phút/run",
+  "Minishoot' Adventures": "Tự do — save bất cứ lúc",
+  "Enter the Gungeon": "~40 phút/run",
+  "Gunfire Reborn": "~45-90 phút/run",
+  "AK-xolotl: Together": "~15-20 phút/run",
+  "Rabbit and Steel": "~30-45 phút/run",
+  "Apocalypse Party": "~30-40 phút/run",
+  "Arms of God": "~3-5 phút/level",
+  "Touhou: Hero of Ice Fairy": "~20-40 phút/run"
 };
 
 const SCORE_LABELS = [
