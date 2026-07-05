@@ -896,6 +896,13 @@ const RAW = [
   ["Witchfire","Dark fantasy FPS roguelite / Hơi hướng Soulslike","Steam Summer Sale 2026",1,2,0,2,2,2,"Early Access (1.0 cuối 2026). Dark fantasy FPS roguelite. 20–40 phút/mission — dừng sau mission rất gọn. Gunfeel đã rất rõ. Soulslike về phản xạ — không phải game lúc đã mệt."],
   ["Ultros","Metroidvania / Loop-based adventure","Steam Summer Sale 2026",1,2,1,1,1,1,"~11h. Metroidvania màu gắt, loop-based — mỗi vòng thay đổi thế giới. 45–60 phút/phiên. Cá tính mạnh, lạ, không hợp tất cả."],
   ["Tails of Iron","Dark fantasy action RPG 2D / Soulslike-lite","Steam Summer Sale 2026",2,2,1,1,1,2,"~7–8h. Chuột hoàng gia, ếch xâm lăng. Doug Cockle kể như truyện cổ tích tối. Dodge-parry, craft gear, tiến về phía trước. 1–1.5h/boss area. Không phải game lúc đã đuối.",true],
+  ["A Short Hike","Khám phá / Phiêu lưu / Cozy","Steam Summer Sale 2026",2,2,2,1,2,2,"~2.5h. Leo núi không có combat. Lên đỉnh để bắt sóng điện thoại. Auto-save liên tục — 20 phút hay 2 tiếng, không khác nhau. Dừng lúc nào cũng không mất nhịp. 99% Steam.",true],
+  ["Donut County","Puzzle vật lý / Hài / Casual","Steam Summer Sale 2026",2,2,2,1,2,1,"~1.5–2h. Bạn là một cái hố đất. Hút mọi thứ vào, hố càng lớn. 3–10 phút/chapter — điểm dừng ngắn nhất danh sách. Không fail state. Cùng publisher với GRIS và What Remains of Edith Finch.",true],
+  ["Downwell","Arcade roguelite / Action platformer","Steam Summer Sale 2026",2,1,1,2,2,1,"15–30 phút/run. Rơi xuống giếng sâu bằng súng ủng. Gần như không có text — không cần đọc gì để chơi. Dừng sau mỗi run rất tự nhiên. Devolver Digital. 1 dev người Nhật."],
+  ["Momodora: Reverie Under the Moonlight","Metroidvania 2D / Dark fantasy","Steam Summer Sale 2026",2,2,0,1,1,1,"~4–6h. Metroidvania pixel art dark fantasy. Boss cần học nhịp — không spam đòn được. 30–45 phút/zone. Đòi phải thật sự tỉnh khi ngồi xuống. 1 dev từ Brazil. 92% Steam."],
+  ["Celeste","Precision platformer / Story","Steam Summer Sale 2026",2,2,0,1,2,2,"~8–10h. Leo núi Celeste — câu chuyện về lo âu và chấp nhận bản thân. Có Assist Mode chính thức: không phải cheat, là tính năng được thiết kế có chủ đích. Auto-save mọi màn, dừng tự do.",true],
+  ["Into the Breach","Chiến thuật theo lượt / Puzzle strategy","Steam Summer Sale 2026",2,2,1,1,2,2,"~5–8h. 3 mech, bàn cờ 8x8 — đòn địch hiện ra trước, bạn tự quyết cứu cái gì, hy sinh cái gì. 5–15 phút/mission. Không cần reflex. Subset Games — team làm FTL.",true],
+  ["West of Loathing","Comedy RPG / Chiến đấu theo lượt","Steam Summer Sale 2026",2,2,1,1,2,2,"~8h. Comedy RPG miền Tây — nhân vật người que, bò quỷ, cowboy xương. Save anywhere. Hài rất duyên nhưng nằm hết trong text tiếng Anh. Tiếng Anh không ổn → nửa cái hay sẽ mất."],
 ];
 
 // Session map — nguồn: game_sessions.docx (Google Drive)
@@ -1033,7 +1040,14 @@ const SESSION_MAP = {
   "TUNIC": "~1-1.5h/dungeon hoặc khu lớn",
   "Witchfire": "~20-40 phút/mission",
   "Ultros": "~45-60 phút/phiên",
-  "Tails of Iron": "~1-1.5h/boss area"
+  "Tails of Iron": "~1-1.5h/boss area",
+  "A Short Hike": "Dừng bất kỳ lúc nào (auto-save liên tục)",
+  "Donut County": "~3-10 phút/chapter",
+  "Downwell": "~15-30 phút/run",
+  "Momodora: Reverie Under the Moonlight": "~30-45 phút/zone",
+  "Celeste": "~20-25 phút/chapter nhỏ (dừng sau từng room)",
+  "Into the Breach": "~5-15 phút/mission",
+  "West of Loathing": "~20-45 phút (save anywhere)"
 };
 
 const SCORE_LABELS = [
