@@ -903,6 +903,16 @@ const RAW = [
   ["Celeste","Precision platformer / Story","Steam Summer Sale 2026",2,2,0,1,2,2,"~8–10h. Leo núi Celeste — câu chuyện về lo âu và chấp nhận bản thân. Có Assist Mode chính thức: không phải cheat, là tính năng được thiết kế có chủ đích. Auto-save mọi màn, dừng tự do.",true],
   ["Into the Breach","Chiến thuật theo lượt / Puzzle strategy","Steam Summer Sale 2026",2,2,1,1,2,2,"~5–8h. 3 mech, bàn cờ 8x8 — đòn địch hiện ra trước, bạn tự quyết cứu cái gì, hy sinh cái gì. 5–15 phút/mission. Không cần reflex. Subset Games — team làm FTL.",true],
   ["West of Loathing","Comedy RPG / Chiến đấu theo lượt","Steam Summer Sale 2026",2,2,1,1,2,2,"~8h. Comedy RPG miền Tây — nhân vật người que, bò quỷ, cowboy xương. Save anywhere. Hài rất duyên nhưng nằm hết trong text tiếng Anh. Tiếng Anh không ổn → nửa cái hay sẽ mất."],
+["THE PATHLESS","Phiêu lưu / Khám phá / Di chuyển","Steam Summer Sale 2026",2,2,1,2,1,2,"~6–8h. Cung thủ + đại bàng, không một chữ text. Bắn tên đúng nhịp để giữ tốc độ — lướt qua rừng, tuyết, di tích cổ. Boss = điểm dừng rõ sau mỗi khu vực. Giant Squid (ABZÛ) / Annapurna."],
+["COCOON","Puzzle / Khám phá / Tư duy không gian","Steam Summer Sale 2026",2,2,1,2,2,2,"~6h. Không một dòng text. Mang quả cầu — mỗi cầu là một thế giới. Nhảy vào trong để giải puzzle, đặt ra ngoài để thay đổi môi trường. Auto-save liên tục. Designer Limbo/Inside. 93% Steam.",true],
+["Sol Cesto","Tactical roguelite / Board-game roguelite","Steam Summer Sale 2026",2,1,2,2,2,1,"~30–60 phút/run. Chọn hàng trên grid, quản lý rủi ro — không cần reflex. Board-game roguelite. 18 ngôn ngữ, gần như không text barrier. Mới ra 1.0 tháng 4/2026. 89% Steam."],
+["Dreamscaper","Action roguelite / Hành động theo run","Steam Summer Sale 2026",1,1,1,1,1,0,"~15–20h. Ban ngày nói chuyện NPC xây relationship, ban đêm fight ác mộng. 1 run = ~45–60 phút = 1 phiên chơi rõ. Permanent upgrade giữa các run. Entry point roguelite nhẹ. 91% Steam."],
+["Wanderstop","Kể chuyện / Quản lý quán trà / Cozy narrative","Steam Summer Sale 2026",1,2,2,1,1,2,"~10–12h. Chiến binh kiệt sức mắc kẹt trong quán trà ma thuật. Không combat. Chủ đề burnout — Davey Wreden (Stanley Parable). Tiếng Anh nhiều nhưng câu đơn giản, dễ đọc. 92% Steam."],
+["Nobody Saves the World","Action RPG / Dungeon crawler","Steam Summer Sale 2026",1,1,1,1,1,1,"~15–20h. Biến thành slug, ghost, dragon — mix ability giữa các form. 1 dungeon = ~30–60 phút = 1 session tự nhiên. Co-op 2 người. Drinkbox Studios (Guacamelee). 91% Steam."],
+["VOIDIGO","Roguelite bắn súng / Twin-stick shooter","Steam Summer Sale 2026",1,1,0,2,2,1,"~10–20h. Roguelite bắn súng — boss không đứng chờ, nó chạy ngược lại săn bạn. Gần như không text. 30–45 phút/run, dừng rất sạch. Không hợp lúc quá mệt. 96% Steam."],
+["Laika: Aged Through Blood","Motorvania / Hành động xe máy","Steam Summer Sale 2026",1,1,0,1,1,2,"~10–15h. Cưỡi xe máy, deflect đạn giống Sekiro nhưng đang wheelie. Người mẹ chó tìm con trong thế giới tận thế do chim cai trị. Cần session 1h+ để vào guồng. 92% Steam."],
+["Nine Sols","Metroidvania / Soulslike 2D / Action parry","Steam Summer Sale 2026",1,2,0,2,1,2,"~20–25h. Taopunk — Sekiro-style parry, hand-drawn. RedCandleGames (Detention, Devotion). Việt hóa cộng đồng chất lượng tốt. Boss rất khó — cần muscle memory. 95% Steam, gần 20K review.",true],
+["Hollow Knight","Metroidvania / Soulslike 2D / Khám phá","Steam Summer Sale 2026",0,2,0,1,1,2,"~40h+. Vương quốc côn trùng Hallownest đã sụp đổ. Lore ẩn trong item, NPC, môi trường. Bench nhiều nhưng 'thêm một bench nữa thôi' syndrome rất thật. Dễ mất context nếu dừng lâu. 97% Steam."],
 ];
 
 // Session map — nguồn: game_sessions.docx (Google Drive)
@@ -1047,7 +1057,17 @@ const SESSION_MAP = {
   "Momodora: Reverie Under the Moonlight": "~30-45 phút/zone",
   "Celeste": "~20-25 phút/chapter nhỏ (dừng sau từng room)",
   "Into the Breach": "~5-15 phút/mission",
-  "West of Loathing": "~20-45 phút (save anywhere)"
+  "West of Loathing": "~20-45 phút (save anywhere)",
+  "THE PATHLESS": "~45–60 phút/khu vực (save bằng tay được)",
+  "COCOON": "~30–60 phút/cụm puzzle (auto-save liên tục)",
+  "Sol Cesto": "~30–60 phút/run",
+  "Dreamscaper": "~45–60 phút/run",
+  "Wanderstop": "~30–60 phút/ca làm việc",
+  "Nobody Saves the World": "~30–60 phút/dungeon",
+  "VOIDIGO": "~30–45 phút/run",
+  "Laika: Aged Through Blood": "~45–60 phút/khu vực (sau boss là điểm dừng tốt nhất)",
+  "Nine Sols": "~60–90 phút",
+  "Hollow Knight": "~60–90 phút (bench nhiều nhưng dễ bị kéo thêm)",
 };
 
 const SCORE_LABELS = [
