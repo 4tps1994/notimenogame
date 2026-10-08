@@ -721,6 +721,14 @@
   </div>
 </div>
 
+<div class="filter-section">
+  <div class="section-label">Bộ lọc 03 — Ngôn ngữ</div>
+  <div class="question">Chỉ muốn xem game có hỗ trợ?</div>
+  <div class="filter-grid">
+    <button class="filter-btn" id="vh-filter-btn" onclick="toggleVH(this)"><span>🇻🇳 Có Việt Hóa</span></button>
+  </div>
+</div>
+
 <div class="search-section">
   <input type="text" id="search-input" class="search-input" placeholder="Tìm game..." autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off">
 </div>
@@ -765,101 +773,101 @@ const RAW = [
   ["To the Moon","Walking sim / Narrative","10 Game Ngắn Cảm Xúc",2,2,2,1,2,2,"~4h. Đọc nhiều hơn chơi, gần như không đòi kỹ năng. Hợp người muốn một câu chuyện cảm xúc hơn là gameplay."],
   ["Florence","Interactive narrative","10 Game Ngắn Cảm Xúc",2,2,2,2,2,1,"~1h. Cực ngắn, nhẹ, gần như chơi một lần là xong. Hợp khi chỉ muốn một trải nghiệm nhỏ nhưng có cảm xúc.",true],
   ["Will: Follow the Light","Walking sim / Narrative","10 Game Tháng 4",2,2,2,1,2,2,"~3-4h. Narrative nhẹ nhàng. Dừng tự do. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Everything is Crab","Indie / Arcade","10 Game Tháng 5",2,2,2,2,2,1,"~1-2h. Arcade ngắn. Dừng tự do. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Mixtape","Walking sim / Narrative","Tê Cân Nhắc",2,2,2,1,1,2,"~3-4h. Walking sim kết hợp playlist nhạc. Checkpoint tự nhiên. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
+  ["Everything is Crab","Indie / Arcade","10 Game Tháng 5",2,2,2,2,2,1,"~1-2h. Arcade ngắn. Dừng tự do. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.. Có Việt Hóa."],
+  ["Mixtape","Walking sim / Narrative","Tê Cân Nhắc",2,2,2,1,1,2,"~3-4h. Walking sim kết hợp playlist nhạc. Checkpoint tự nhiên. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.. Có Việt Hóa."],
   ["Inmost","Platformer puzzle / Narrative","10 Pixel Indie",2,2,1,1,2,2,"~5h. Pixel art tối, 3 nhân vật xen kẽ. Checkpoint rõ. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.",true],
-  ["Eastward","RPG hành động / Narrative","10 Pixel Indie",1,2,2,2,1,2,"~20h. RPG pixel narrative nặng. Ít grind. Hợp người bận vì ít áp lực và có điểm dừng rõ."],
+  ["Eastward","RPG hành động / Narrative","10 Pixel Indie",1,2,2,2,1,2,"~20h. RPG pixel narrative nặng. Ít grind. Hợp người bận vì ít áp lực và có điểm dừng rõ.. Có Việt Hóa."],
   ["Hyper Light Drifter","Action / Khám phá","10 Pixel Indie",2,2,1,2,1,2,"~8-10h. Không lời thoại. Combat nhanh, khó vừa. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.",true],
   ["Firewatch","Walking sim","10 Game Ngắn Cảm Xúc",2,2,2,1,2,1,"~5h. Đi bộ, trò chuyện qua radio và khám phá. Không áp lực, nhưng nên chơi lúc có tâm trạng để thấm câu chuyện.",true],
-  ["Before Your Eyes","Narrative / Interactive","10 Game Ngắn Cảm Xúc",2,2,2,1,1,2,"~1.5h. Cơ chế chớp mắt rất đặc biệt, chơi một mạch sẽ tốt hơn. Ngắn nhưng cảm xúc khá mạnh.",true],
-  ["A Space for the Unbound","RPG narrative","10 Game Ngắn Cảm Xúc",1,2,2,2,1,2,"~13h. Text nhiều nhưng nhịp chậm và giàu cảm xúc. Hợp nếu Tê muốn chơi dần như đọc một cuốn truyện dài."],
+  ["Before Your Eyes","Narrative / Interactive","10 Game Ngắn Cảm Xúc",2,2,2,1,1,2,"~1.5h. Cơ chế chớp mắt rất đặc biệt, chơi một mạch sẽ tốt hơn. Ngắn nhưng cảm xúc khá mạnh. Có Việt Hóa.",true],
+  ["A Space for the Unbound","RPG narrative","10 Game Ngắn Cảm Xúc",1,2,2,2,1,2,"~13h. Text nhiều nhưng nhịp chậm và giàu cảm xúc. Hợp nếu Tê muốn chơi dần như đọc một cuốn truyện dài.. Có Việt Hóa."],
   ["The First Tree","Walking sim","10 Game Ngắn Cảm Xúc",2,2,2,1,2,1,"~2h. Narrative về cha và con. Chơi một lần. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Mouse: P.I. For Hire","FPS điều tra","10 Game Tháng 4",2,2,1,2,1,2,"~5h. FPS điều tra hài hước. Màn chơi ngắn. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["1348: Ex Voto","Walking sim","Tê Cân Nhắc",2,2,2,0,2,1,"~3h. Walking sim về dịch hạch. Không TV. Nặng cảm xúc. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị. Rào cản ngôn ngữ khá nặng."],
-  ["Resident Evil Requiem","Kinh dị sinh tồn","Tê Cân Nhắc",1,2,0,2,2,2,"~12h. Survival horror. Checkpoint auto thường xuyên. Hợp người bận vì ít áp lực và có điểm dừng rõ. Cần tập trung cao."],
-  ["Indiana Jones and The Great Circle","Phiêu lưu / Stealth","10 Hành Động",1,2,1,2,1,2,"Phiêu lưu tuyến tính, checkpoint tốt và nhịp chơi khá dễ theo. Hợp người bận muốn cảm giác phim phiêu lưu sau giờ làm.",true],
+  ["Mouse: P.I. For Hire","FPS điều tra","10 Game Tháng 4",2,2,1,2,1,2,"~5h. FPS điều tra hài hước. Màn chơi ngắn. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.. Có Việt Hóa."],
+  ["1348: Ex Voto","Walking sim","Tê Cân Nhắc",2,2,2,0,2,1,"~3h. Walking sim về dịch hạch. Không TV. Nặng cảm xúc. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị. Rào cản ngôn ngữ khá nặng.. Có Việt Hóa."],
+  ["Resident Evil Requiem","Kinh dị sinh tồn","Tê Cân Nhắc",1,2,0,2,2,2,"~12h. Survival horror. Checkpoint auto thường xuyên. Hợp người bận vì ít áp lực và có điểm dừng rõ. Cần tập trung cao.. Có Việt Hóa."],
+  ["Indiana Jones and The Great Circle","Phiêu lưu / Stealth","10 Hành Động",1,2,1,2,1,2,"Phiêu lưu tuyến tính, checkpoint tốt và nhịp chơi khá dễ theo. Hợp người bận muốn cảm giác phim phiêu lưu sau giờ làm. Có Việt Hóa.",true],
   ["Metal Gear Solid Delta: Snake Eater","Stealth action","10 Hành Động",1,2,1,2,1,2,"~18h. Remake MGS3. Cutscene dài nhưng đáng xem. Hợp người bận vì ít áp lực và có điểm dừng rõ."],
   ["Huntdown","Arcade shooter side-scroll","10 Pixel Indie",2,2,1,2,1,1,"~5h. Arcade shooter 2D co-op. Màn chơi ngắn. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
   ["Arco","RPG chiến thuật","10 Pixel Indie",2,2,1,1,1,2,"~12h. Tactical RPG hành động đồng thời độc đáo. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Stray","Phiêu lưu / Narrative","10 Game Ngắn Cảm Xúc",2,2,2,1,1,1,"~8h. Chơi mèo lang thang thành phố robot. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.",true],
-  ["Gears of War: E-Day","TPS co-op","Upcoming 2026",1,2,1,2,1,2,"~10h. TPS cover co-op quen thuộc. Checkpoint. Hợp người bận vì ít áp lực và có điểm dừng rõ."],
+  ["Stray","Phiêu lưu / Narrative","10 Game Ngắn Cảm Xúc",2,2,2,1,1,1,"~8h. Chơi mèo lang thang thành phố robot. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị. Có Việt Hóa.",true],
+  ["Gears of War: E-Day","TPS co-op","Upcoming 2026",1,2,1,2,1,2,"~10h. TPS cover co-op quen thuộc. Checkpoint. Hợp người bận vì ít áp lực và có điểm dừng rõ.. Có Việt Hóa."],
   ["Cthulhu: The Cosmic Abyss","Investigation horror","10 Game Tháng 4",2,2,1,1,2,1,"~5h. Investigation horror giải đố. Dừng tự do. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
   ["Samson","Brawler narrative","10 Game Tháng 4",2,2,1,1,1,2,"~4h. Brawler narrative gọn. Màn chơi ngắn. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
   ["Directive 8020","Sci-fi narrative","10 Game Tháng 5",2,2,1,1,1,2,"~4h. Sci-fi narrative đa nhân vật. Dừng tự do. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Reanimal","Kinh dị sinh tồn","Tê Cân Nhắc",2,2,1,1,1,1,"~7h. Horror sinh tồn trốn quái. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Poppy Playtime – Chapter 5","Kinh dị giải đố","Tê Cân Nhắc",2,2,1,1,1,1,"~3h. Kinh dị giải đố. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
+  ["Reanimal","Kinh dị sinh tồn","Tê Cân Nhắc",2,2,1,1,1,1,"~7h. Horror sinh tồn trốn quái. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.. Có Việt Hóa."],
+  ["Poppy Playtime – Chapter 5","Kinh dị giải đố","Tê Cân Nhắc",2,2,1,1,1,1,"~3h. Kinh dị giải đố. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.. Có Việt Hóa."],
   ["Far Far West","FPS co-op","Tê Cân Nhắc",2,0,1,2,2,1,"~7h. FPS co-op western. Dừng tự do sau mission. Chơi được sau giờ làm, miễn là chọn đúng session."],
   ["Motorslice","Hành động / Parkour","Tê Cân Nhắc",2,1,1,2,1,1,"~5h. Hành động parkour tốc độ cao. Màn chơi ngắn. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
   ["LEGO Batman: Legacy of the Dark Knight","Hành động phiêu lưu","Tê Cân Nhắc",1,1,1,2,1,2,"~18h. Hành động LEGO phiêu lưu co-op. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session."],
-  ["Grounded","Sinh tồn / Phiêu lưu","10 Sinh Tồn Xây Base",0,2,1,1,2,2,"Dừng tự do nhưng thế giới rộng - việc cần làm luôn nối nhau. Hợp chơi lâu dài cùng bạn bè hơn là chơi ngắn sau giờ làm."],
-  ["Hades","Roguelite hành động","10 Roguelike",0,2,1,2,1,2,"Run 30–45 phút. Rất hay, rất mượt, nhưng dễ thêm một run nữa rồi mất cả buổi tối. Người bận chơi được, nhưng phải tự khóa thời gian.",true],
-  ["Vampire Survivors","Roguelite horde survival","10 Roguelike",0,2,2,2,1,1,"Run khoảng 30 phút. Cực dễ vào, cực dễ cuốn, gần như không cần tập trung nhiều. Nguy hiểm ở chỗ chơi lúc nào cũng thấy thêm ván nữa được mà.",true],
-  ["Halls of Torment","Roguelite horde survival","10 Roguelike",0,2,2,2,1,1,"~18h. Bullet heaven tối tăm hơn VS. Run ~20-30 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Grounded","Sinh tồn / Phiêu lưu","10 Sinh Tồn Xây Base",0,2,1,1,2,2,"Dừng tự do nhưng thế giới rộng - việc cần làm luôn nối nhau. Hợp chơi lâu dài cùng bạn bè hơn là chơi ngắn sau giờ làm.. Có Việt Hóa."],
+  ["Hades","Roguelite hành động","10 Roguelike",0,2,1,2,1,2,"Run 30–45 phút. Rất hay, rất mượt, nhưng dễ thêm một run nữa rồi mất cả buổi tối. Người bận chơi được, nhưng phải tự khóa thời gian. Có Việt Hóa.",true],
+  ["Vampire Survivors","Roguelite horde survival","10 Roguelike",0,2,2,2,1,1,"Run khoảng 30 phút. Cực dễ vào, cực dễ cuốn, gần như không cần tập trung nhiều. Nguy hiểm ở chỗ chơi lúc nào cũng thấy thêm ván nữa được mà. Có Việt Hóa.",true],
+  ["Halls of Torment","Roguelite horde survival","10 Roguelike",0,2,2,2,1,1,"~18h. Bullet heaven tối tăm hơn VS. Run ~20-30 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Sifu","Hành động võ thuật","10 Hành Động",2,2,0,1,1,2,"Game ngắn nhưng rất khó. Một buổi tối có thể chỉ để vượt một màn - nên hợp người bận thích thử thách hơn là thư giãn.",true],
-  ["Wanted: Dead","Hành động chém súng","10 Hành Động",2,2,1,1,1,1,"~9h. Hack-and-slash cũ kỹ cố tình. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
-  ["Kunitsu-Gami: Path of the Goddess","Chiến thuật / Action","10 Hành Động",1,2,1,1,1,2,"~15h. Hành động + chiến thuật ban ngày / ban đêm. Checkpoint sau màn. Chơi được sau giờ làm, miễn là chọn đúng session."],
-  ["Pragmata","Hành động sci-fi","10 Hành Động",1,2,1,1,1,2,"~15h. Hành động sci-fi cùng robot nhỏ. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session."],
-  ["Ninja Gaiden 4","Hành động tốc độ cao","10 Hành Động",1,2,0,2,1,2,"~18h. Hành động tốc độ cao. Rất khó. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session. Cần tập trung cao."],
-  ["Kingdom Two Crowns","Strategy chill","10 Pixel Indie",0,1,2,2,2,1,"~22h. Strategy 2D tối giản về xây vương quốc. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Wanted: Dead","Hành động chém súng","10 Hành Động",2,2,1,1,1,1,"~9h. Hack-and-slash cũ kỹ cố tình. Checkpoint. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị.. Có Việt Hóa."],
+  ["Kunitsu-Gami: Path of the Goddess","Chiến thuật / Action","10 Hành Động",1,2,1,1,1,2,"~15h. Hành động + chiến thuật ban ngày / ban đêm. Checkpoint sau màn. Chơi được sau giờ làm, miễn là chọn đúng session.. Có Việt Hóa."],
+  ["Pragmata","Hành động sci-fi","10 Hành Động",1,2,1,1,1,2,"~15h. Hành động sci-fi cùng robot nhỏ. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session.. Có Việt Hóa."],
+  ["Ninja Gaiden 4","Hành động tốc độ cao","10 Hành Động",1,2,0,2,1,2,"~18h. Hành động tốc độ cao. Rất khó. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session. Cần tập trung cao.. Có Việt Hóa."],
+  ["Kingdom Two Crowns","Strategy chill","10 Pixel Indie",0,1,2,2,2,1,"~22h. Strategy 2D tối giản về xây vương quốc. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Drova: Forsaken Kin","Action RPG","10 Pixel Indie",1,2,1,1,1,2,"~22h. Action RPG dark fantasy pixel. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session."],
-  ["007 First Light","Hành động điệp viên","007 First Light",1,2,1,1,1,2,"~18h. Điệp viên trẻ, stealth và bắn súng. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session."],
+  ["007 First Light","Hành động điệp viên","007 First Light",1,2,1,1,1,2,"~18h. Điệp viên trẻ, stealth và bắn súng. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session.. Có Việt Hóa."],
   ["Fable (reboot)","RPG phiêu lưu","Upcoming 2026",0,2,1,2,1,2,"~35h+. RPG phiêu lưu thế giới mở hài hước. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
   ["Phantom Blade Zero","Hành động võ hiệp","Upcoming 2026",1,2,0,2,1,2,"~18h. Hành động võ hiệp. Khó, đẹp. Checkpoint. Chơi được sau giờ làm, miễn là chọn đúng session. Cần tập trung cao."],
-  ["Forza Horizon 6","Racing / Open world","Upcoming 2026",0,1,2,2,2,1,"~50h+. Racing open world. Dừng tự do sau mỗi race. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Forza Horizon 6","Racing / Open world","Upcoming 2026",0,1,2,2,2,1,"~50h+. Racing open world. Dừng tự do sau mỗi race. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Aphelion","Indie action RPG","10 Game Tháng 4",2,2,1,1,1,1,"~7h. Indie action RPG gọn. Màn chơi ngắn. Rất linh hoạt cho người bận, chơi ngắn vẫn có giá trị."],
   ["ExeKiller","Bắn súng / Open world","Tê Cân Nhắc",1,1,1,2,1,1,"~18h. FPS bounty hunter open world tối tăm. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian."],
   ["Teamfight Manager 2","Quản lý esports","Tê Cân Nhắc",1,1,0,2,2,1,"~20h. Sim quản lý đội esports. Dừng tự do. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["Astroneer","Sinh tồn / Khám phá vũ trụ","10 Sinh Tồn Xây Base",0,1,2,1,2,1,"~40h+. Sinh tồn vũ trụ chill. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Astroneer","Sinh tồn / Khám phá vũ trụ","10 Sinh Tồn Xây Base",0,1,2,1,2,1,"~40h+. Sinh tồn vũ trụ chill. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Planet Crafter","Sinh tồn / Terraform","10 Sinh Tồn Xây Base",0,1,2,1,2,1,"~40h+. Terraform hành tinh từng bước. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
   ["Raft","Sinh tồn đại dương","10 Sinh Tồn Xây Base",0,1,2,1,2,1,"~40h+. Sinh tồn trên bè trôi. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
-  ["V Rising","Sinh tồn / Action RPG","10 Sinh Tồn Xây Base",0,2,1,1,1,2,"~50h+. Sinh tồn hút máu, xây lâu đài. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["V Rising","Sinh tồn / Action RPG","10 Sinh Tồn Xây Base",0,2,1,1,1,2,"~50h+. Sinh tồn hút máu, xây lâu đài. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Subnautica","Sinh tồn biển / Khám phá","10 Sinh Tồn Xây Base",0,2,1,1,1,2,"Khám phá biển sâu rất cuốn và dễ chơi quá giờ. Không hợp 30 phút vì luôn có thêm một điểm muốn bơi tới."],
-  ["Enshrouded","Sinh tồn / RPG / Build","10 Sinh Tồn Xây Base",0,2,1,1,2,1,"~50h+. Sinh tồn RPG xây base trong sương mù. Dừng tự do. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian."],
-  ["Valheim","Sinh tồn co-op","10 Sinh Tồn Xây Base",0,2,1,1,1,2,"Mỗi buổi chơi thường kéo dài vì luôn có mục tiêu tiếp theo: đi farm - xây base - đánh boss. Hợp cuối tuần hơn là tối ngắn."],
+  ["Enshrouded","Sinh tồn / RPG / Build","10 Sinh Tồn Xây Base",0,2,1,1,2,1,"~50h+. Sinh tồn RPG xây base trong sương mù. Dừng tự do. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian.. Có Việt Hóa."],
+  ["Valheim","Sinh tồn co-op","10 Sinh Tồn Xây Base",0,2,1,1,1,2,"Mỗi buổi chơi thường kéo dài vì luôn có mục tiêu tiếp theo: đi farm - xây base - đánh boss. Hợp cuối tuần hơn là tối ngắn.. Có Việt Hóa."],
   ["Dead Cells","Roguelite platformer","10 Roguelike",0,2,1,2,1,1,"Run ngắn, combat nhanh và checkpoint theo run. Hợp chơi từng đợt, nhưng cần phản xạ và rất dễ muốn thử lại ngay sau khi chết."],
-  ["Prince of Persia: The Lost Crown","Metroidvania","10 Hành Động",1,2,0,1,1,2,"~20h. Metroidvania cơ chế thời gian. Khó vừa. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["Stellar Blade","Action / Soulslike","10 Hành Động",1,2,0,1,1,2,"~28h. Action soulslike. Đẹp. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["Black Myth: Wukong","Action / Soulslike","10 Hành Động",0,2,0,2,1,2,"Đẹp và cuốn, nhưng boss khó và thời lượng dài. Người bận nên chơi khi có thời gian thật sự, không phải kiểu 20 phút mở lên cho vui."],
+  ["Prince of Persia: The Lost Crown","Metroidvania","10 Hành Động",1,2,0,1,1,2,"~20h. Metroidvania cơ chế thời gian. Khó vừa. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao.. Có Việt Hóa."],
+  ["Stellar Blade","Action / Soulslike","10 Hành Động",1,2,0,1,1,2,"~28h. Action soulslike. Đẹp. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao.. Có Việt Hóa."],
+  ["Black Myth: Wukong","Action / Soulslike","10 Hành Động",0,2,0,2,1,2,"Đẹp và cuốn, nhưng boss khó và thời lượng dài. Người bận nên chơi khi có thời gian thật sự, không phải kiểu 20 phút mở lên cho vui.. Có Việt Hóa."],
   ["Sumerian Six","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,2,"~15h. Tactical stealth biệt kích WWII. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["63 Days","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,2,"~15h. Chiến thuật ẩn nấp Ba Lan WWII. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["Eriksholm: The Stolen Dream","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,2,"~15h. Chiến thuật ẩn nấp gothic Scandinavia. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
+  ["63 Days","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,2,"~15h. Chiến thuật ẩn nấp Ba Lan WWII. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao.. Có Việt Hóa."],
+  ["Eriksholm: The Stolen Dream","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,2,"~15h. Chiến thuật ẩn nấp gothic Scandinavia. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao.. Có Việt Hóa."],
   ["Aliens: Dark Descent","Chiến thuật real-time","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,2,"~18h. Chiến thuật real-time survival. Một màn chơi dài. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
   ["GTA VI","Open world action","Upcoming 2026",0,1,1,2,1,2,"Khả năng cao là game rất dễ ngốn hàng chục giờ. Không phải game xả nhanh - mà là một thế giới để sống trong đó một thời gian dài."],
-  ["Beast of Reincarnation","Indie action","Upcoming 2026",1,2,1,1,1,1,"~12h. Indie action gọn. Màn chơi ngắn. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian."],
+  ["Beast of Reincarnation","Indie action","Upcoming 2026",1,2,1,1,1,1,"~12h. Indie action gọn. Màn chơi ngắn. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian.. Có Việt Hóa."],
   ["Thick As Thieves","Stealth action","10 Game Tháng 5",1,2,0,1,1,2,"~18h. Stealth action trong thành phố tương lai. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
   ["Luna Abyss","Action / Soulslike","10 Game Tháng 5",2,2,0,1,1,1,"~9h. Soulslike bullet hell. Khó từ đầu. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["R.I.P","Roguelite / Loot shooter","Tê Cân Nhắc",0,0,1,2,2,1,"~40h+. Roguelite loot shooter. Grind rất nặng. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["R.I.P","Roguelite / Loot shooter","Tê Cân Nhắc",0,0,1,2,2,1,"~40h+. Roguelite loot shooter. Grind rất nặng. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Fields of Mistria","Farming sim","Tê Cân Nhắc",0,0,2,1,2,1,"Farming sim dễ thương nhưng rất dễ thành vòng lặp thêm một ngày nữa. Dừng được, nhưng người bận cần tự đặt giới hạn."],
   ["Ranger Path Simulator","Simulation chill","Tê Cân Nhắc",1,0,2,2,1,0,"~12h. Sim kiểm lâm trong rừng. Chill. Dừng theo ca làm việc. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian."],
-  ["REPLACED","Hành động 2.5D","Tê Cân Nhắc",2,0,1,1,1,1,"~9h. Hành động 2.5D cyberpunk pixel. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian."],
+  ["REPLACED","Hành động 2.5D","Tê Cân Nhắc",2,0,1,1,1,1,"~9h. Hành động 2.5D cyberpunk pixel. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian.. Có Việt Hóa."],
   ["Outbound","Chill / Open world","Tê Cân Nhắc",0,0,2,2,2,0,"Chill, dừng tự do, nhưng dễ trôi thời gian vì cứ muốn nhặt thêm và nâng cấp thêm. Hợp tối mệt, nhưng đừng kỳ vọng cảm giác rõ mục tiêu."],
-  ["Risk of Rain 2","Roguelite bắn súng 3D","10 Roguelike",0,2,1,1,1,1,"~40h+. Roguelite bắn súng 3D. Run ~45-60 phút. Khó sau một hồi. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
-  ["Balatro","Roguelite thẻ bài / Poker","10 Roguelike",0,2,1,1,1,1,"Mỗi run không quá dài nhưng cực dễ gây nghiện. Hợp người bận nếu chơi có kỷ luật, còn mở trước khi ngủ thì khá nguy hiểm."],
-  ["Ravenswatch","Roguelite co-op action","10 Roguelike",0,2,1,1,1,1,"~20h. Roguelite co-op hành động. Run ~40 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Risk of Rain 2","Roguelite bắn súng 3D","10 Roguelike",0,2,1,1,1,1,"~40h+. Roguelite bắn súng 3D. Run ~45-60 phút. Khó sau một hồi. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
+  ["Balatro","Roguelite thẻ bài / Poker","10 Roguelike",0,2,1,1,1,1,"Mỗi run không quá dài nhưng cực dễ gây nghiện. Hợp người bận nếu chơi có kỷ luật, còn mở trước khi ngủ thì khá nguy hiểm.. Có Việt Hóa."],
+  ["Ravenswatch","Roguelite co-op action","10 Roguelike",0,2,1,1,1,1,"~20h. Roguelite co-op hành động. Run ~40 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Tiny Rogues","Roguelite pixel","10 Roguelike",0,2,1,1,1,1,"~20h. Roguelite pixel tối giản. Run ~20-30 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
-  ["Wuchang: Fallen Feathers","Soulslike","10 Hành Động",1,2,0,1,0,2,"~28h. Soulslike bối cảnh đại dịch Trung Quốc. Session dài. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
+  ["Wuchang: Fallen Feathers","Soulslike","10 Hành Động",1,2,0,1,0,2,"~28h. Soulslike bối cảnh đại dịch Trung Quốc. Session dài. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao.. Có Việt Hóa."],
   ["The Surge 2","Soulslike sci-fi","10 Hành Động",1,1,1,1,1,1,"~20h. Soulslike sci-fi. Vừa phải. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian."],
   ["Desperados 3","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,2,"Mỗi màn là một bài toán chiến thuật rõ ràng. Rất hay cho người bận thích suy nghĩ, nhưng không phải game bật lên chơi khi não đã cạn pin.",true],
   ["Shadow Tactics: Blades of the Shogun","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,2,"Mission rõ ràng, save/load liên tục. Hợp người bận nếu chấp nhận tập trung cao trong từng màn."],
-  ["Shadow Gambit: The Cursed Crew","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,2,"Linh hoạt hơn Shadow Tactics, nhưng vẫn là game cần não. Hợp chơi từng mission, không hợp lúc chỉ muốn xả stress nhanh."],
-  ["Commandos: Origins","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,2,"~22h. Tactical stealth WWII kinh điển reboot. Checkpoint sau mission. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
-  ["The Stone of Madness","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,1,"~15h. Tactical stealth kinh dị trong tu viện. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["Crimson Desert","Open world action","Upcoming 2026",0,1,1,1,1,2,"~35h+. Open world action MMO-like. Đẹp. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Shadow Gambit: The Cursed Crew","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,2,"Linh hoạt hơn Shadow Tactics, nhưng vẫn là game cần não. Hợp chơi từng mission, không hợp lúc chỉ muốn xả stress nhanh.. Có Việt Hóa."],
+  ["Commandos: Origins","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,2,"~22h. Tactical stealth WWII kinh điển reboot. Checkpoint sau mission. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao.. Có Việt Hóa."],
+  ["The Stone of Madness","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",1,2,0,1,1,1,"~15h. Tactical stealth kinh dị trong tu viện. Checkpoint. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao.. Có Việt Hóa."],
+  ["Crimson Desert","Open world action","Upcoming 2026",0,1,1,1,1,2,"~35h+. Open world action MMO-like. Đẹp. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Masters of Albion","God game","10 Game Tháng 4",0,1,1,1,2,1,"~30h+. God game xây vương quốc. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
-  ["Mewgenics","Quản lý / Chiến thuật","Tê Cân Nhắc",0,1,0,1,1,2,"~35h+. Sim quản lý mèo kỳ lạ của Team Meat. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
-  ["Core Keeper","Sinh tồn / Đào hầm","Tê Cân Nhắc",0,1,1,2,0,1,"~50h+. Sinh tồn đào hầm pixel co-op. Session dài không dừng. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
-  ["Slay the Spire 2","Roguelite thẻ bài","Tê Cân Nhắc",0,2,0,1,1,1,"~35h+. Thẻ bài roguelite sequel. Run ~45 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
-  ["RACCOIN","Roguelite / Arcade","Tê Cân Nhắc",0,1,1,2,1,0,"~10h. Roguelite arcade bí ẩn. Run ngắn. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
-  ["Heroes of Might & Magic: Olden Era","Chiến thuật turn-based","Tê Cân Nhắc",0,0,0,1,2,2,"~50h+. Turn-based chiến lược kinh điển. Session rất dài. Cần commit thời gian thật sự, dễ thành dự án nhiều buổi. Cần tập trung cao."],
-  ["The Riftbreaker","Sinh tồn / Base building","10 Sinh Tồn Xây Base",0,1,1,1,1,1,"~35h+. Sinh tồn xây base + tower defense. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game."],
+  ["Mewgenics","Quản lý / Chiến thuật","Tê Cân Nhắc",0,1,0,1,1,2,"~35h+. Sim quản lý mèo kỳ lạ của Team Meat. Dừng tự do. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao.. Có Việt Hóa."],
+  ["Core Keeper","Sinh tồn / Đào hầm","Tê Cân Nhắc",0,1,1,2,0,1,"~50h+. Sinh tồn đào hầm pixel co-op. Session dài không dừng. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
+  ["Slay the Spire 2","Roguelite thẻ bài","Tê Cân Nhắc",0,2,0,1,1,1,"~35h+. Thẻ bài roguelite sequel. Run ~45 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao.. Có Việt Hóa."],
+  ["RACCOIN","Roguelite / Arcade","Tê Cân Nhắc",0,1,1,2,1,0,"~10h. Roguelite arcade bí ẩn. Run ngắn. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
+  ["Heroes of Might & Magic: Olden Era","Chiến thuật turn-based","Tê Cân Nhắc",0,0,0,1,2,2,"~50h+. Turn-based chiến lược kinh điển. Session rất dài. Cần commit thời gian thật sự, dễ thành dự án nhiều buổi. Cần tập trung cao.. Có Việt Hóa."],
+  ["The Riftbreaker","Sinh tồn / Base building","10 Sinh Tồn Xây Base",0,1,1,1,1,1,"~35h+. Sinh tồn xây base + tower defense. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game.. Có Việt Hóa."],
   ["Slay the Spire","Roguelite thẻ bài","10 Roguelike",0,2,0,1,1,1,"Mỗi run khoảng 45 phút. Cực linh hoạt nhưng dễ mất thời gian khi build đang đẹp. Hợp người bận thích suy nghĩ, không hợp lúc quá mệt."],
   ["Curse of the Dead Gods","Roguelite dungeon","10 Roguelike",0,2,0,1,1,1,"~25h+. Roguelite dungeon khó. Run ~30-40 phút. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
   ["Crypt of the NecroDancer","Roguelite nhịp điệu","10 Pixel Indie",1,1,0,1,1,1,"~10h. Roguelite di chuyển theo nhịp nhạc. Màn chơi ngắn. Nên cân nhắc nếu đang mệt hoặc chỉ có ít thời gian. Cần tập trung cao."],
-  ["Wandering Sword","RPG turn-based","10 Pixel Indie",0,2,0,0,1,2,"~35h+. RPG turn-based võ hiệp Trung Quốc. Không TV. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao. Rào cản ngôn ngữ khá nặng."],
+  ["Wandering Sword","RPG turn-based","10 Pixel Indie",0,2,0,0,1,2,"~35h+. RPG turn-based võ hiệp Trung Quốc. Không TV. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao. Rào cản ngôn ngữ khá nặng.. Có Việt Hóa."],
   ["Partisans 1941","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,1,"~20h. Tactical stealth WWII Liên Xô. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
-  ["War Mongrels","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,1,"~18h. Tactical stealth WWII. Khó hơn Desperados. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
+  ["War Mongrels","Chiến thuật ẩn nấp","10 Chiến Thuật Ẩn Nấp",0,2,0,1,1,1,"~18h. Tactical stealth WWII. Khó hơn Desperados. Checkpoint. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao.. Có Việt Hóa."],
   ["Norse: Oath of Blood","Chiến thuật theo lượt","Tê Cân Nhắc",1,1,0,0,1,1,"~15h. Chiến thuật theo lượt bắc âu. Không TV. Không nên ưu tiên nếu mục tiêu là chơi gọn và tiết kiệm thời gian. Cần tập trung cao. Rào cản ngôn ngữ khá nặng."],
-  ["Windrose","Soulslike / Open world","Tê Cân Nhắc",0,1,1,1,0,1,"Soulslike open world cần thời gian và sự tập trung. Không hợp session ngắn vì rất dễ bị kẹt giữa đường hoặc giữa boss."],
+  ["Windrose","Soulslike / Open world","Tê Cân Nhắc",0,1,1,1,0,1,"Soulslike open world cần thời gian và sự tập trung. Không hợp session ngắn vì rất dễ bị kẹt giữa đường hoặc giữa boss.. Có Việt Hóa."],
   ["Deep Rock Galactic: Rogue Core","Roguelite co-op","Tê Cân Nhắc",0,1,0,2,0,1,"Co-op roguelite theo run dài. Hợp chơi cùng nhóm cố định, không hợp nếu chỉ có 20–30 phút lẻ."],
   ["Heroes of Hammerwatch II","Roguelite dungeon","10 Pixel Indie",0,1,0,1,1,1,"~35h+. Roguelite dungeon pixel co-op. Session dài. Dễ chơi lâu hơn dự định, nên đặt giới hạn trước khi vào game. Cần tập trung cao."],
   ["Road to Vostok","Survival FPS solo","10 Game Tháng 4",0,0,0,1,0,2,"Survival FPS khắc nghiệt, cần tập trung và chấp nhận mất mát. Đây là game cho người muốn commit, không phải giải trí nhanh."],
@@ -869,8 +877,8 @@ const RAW = [
   ["Bright Memory: Infinite","Hành động / FPS","Thể Loại Tê Chọn — Action",2,2,0,2,2,1,"~2-3h. FPS tốc độ cao, đẹp, một buổi tối là xong. Checkpoint dày. Ngắn đúng nghĩa."],
   ["Vanquish","Hành động / TPS","Thể Loại Tê Chọn — Action",2,1,0,2,1,2,"~6h. TPS tốc độ cao kinh điển của Platinum. Khó, đòi tập trung. Checkpoint. Hợp người bận thích thử thách gọn."],
   ["Furi","Hành động / Boss rush","Thể Loại Tê Chọn — Action",2,1,0,2,1,2,"~6h. Boss rush thuần — mỗi trận là một bài kiểm tra phản xạ. Dừng sau mỗi boss. Không dành cho lúc mệt."],
-  ["Devil May Cry 5","Hành động / Hack & slash","Thể Loại Tê Chọn — Action",1,1,1,1,2,2,"~12h. Hack & slash theo mission, mỗi mission 20-30 phút. Checkpoint rõ. Chơi cốt truyện thì gọn, cày style thì dài."],
-  ["Evil West","Hành động / Shooter","Thể Loại Tê Chọn — Action",1,1,2,1,1,1,"~10h. Shooter tuyến tính diệt quỷ miền viễn Tây. Nhịp dễ theo, checkpoint đều. Không grind."],
+  ["Devil May Cry 5","Hành động / Hack & slash","Thể Loại Tê Chọn — Action",1,1,1,1,2,2,"~12h. Hack & slash theo mission, mỗi mission 20-30 phút. Checkpoint rõ. Chơi cốt truyện thì gọn, cày style thì dài.. Có Việt Hóa."],
+  ["Evil West","Hành động / Shooter","Thể Loại Tê Chọn — Action",1,1,2,1,1,1,"~10h. Shooter tuyến tính diệt quỷ miền viễn Tây. Nhịp dễ theo, checkpoint đều. Không grind.. Có Việt Hóa."],
   ["Slave Zero X","Hành động / Beat'em up","Thể Loại Tê Chọn — Action",2,1,0,1,2,1,"~7h. Beat'em up 2.5D khó, màn ngắn. Checkpoint. Hợp session ngắn nhưng cần kiên nhẫn với độ khó."],
   ["Katana ZERO","Hành động / Roguelite","Thể Loại Tê Chọn — Action",2,1,0,0,1,2,"~5h. Hành động một nhát chết, màn vài phút, story tốt. Dừng tự do giữa màn. Text tiếng Anh khá nhiều."],
   // Tê Cân Nhắc — individual reviews
@@ -889,14 +897,14 @@ const RAW = [
   ["Season: A Letter to the Future","Walking sim / Chụp ảnh / Nhật ký hành trình","Steam Summer Sale 2026",2,2,1,1,1,2,"~5–6h. Đạp xe qua vùng đất sắp biến mất, ghi lại bằng máy ảnh. Save anytime — 20–30 phút là đủ một đoạn đường. Game không bảo phải chụp gì.",true],
   ["Venba","Kể chuyện / Nấu ăn giải đố","Steam Summer Sale 2026",2,2,2,1,2,2,"~2h. Nấu ăn theo công thức cũ bị mờ chữ. Đủ chơi trong 1 buổi tối. Không fail state. Emotional impact per hour cao nhất danh sách.",true],
   ["Tinykin","Collectathon / Giải đố platform / Khám phá","Steam Summer Sale 2026",1,2,1,2,1,2,"~6h. Phi hành gia bị thu nhỏ trong ngôi nhà khổng lồ. 6 level = 6 session ~45–60 phút. Không combat, không penalty khi ngã. Pikmin nhưng nhẹ hơn nhiều.",true],
-  ["THE KING IS WATCHING","Xây vương quốc roguelite / Chiến thuật nhẹ","Steam Summer Sale 2026",2,2,1,2,1,1,"~4h main. Công dân chỉ làm việc khi vua đang nhìn vào. Quản lý ánh mắt, không phải tài nguyên. 1 run = 30–90 phút — không save giữa run. Cần 40–45 phút liên tục."],
+  ["THE KING IS WATCHING","Xây vương quốc roguelite / Chiến thuật nhẹ","Steam Summer Sale 2026",2,2,1,2,1,1,"~4h main. Công dân chỉ làm việc khi vua đang nhìn vào. Quản lý ánh mắt, không phải tài nguyên. 1 run = 30–90 phút — không save giữa run. Cần 40–45 phút liên tục.. Có Việt Hóa."],
   ["Fights in Tight Spaces","Deckbuilder / Chiến thuật theo lượt","Steam Summer Sale 2026",1,2,1,1,1,2,"~1 run 2–3h, checkpoint sau mỗi encounter. John Wick trên bàn cờ — vị trí là mục tiêu, damage chỉ là kết quả. ~1h/act là session tốt nhất."],
   ["MINOS","Xây mê cung / Chiến thuật / Leo tầng","Steam Summer Sale 2026",1,2,0,1,2,1,"~8–14h. Bạn là Minotaur, mê cung là nhà. 10–30 phút/map. Hiển thị thông tin màn trước — biết mình sắp vào gì. Devolver Digital."],
   ["TUNIC","Action-adventure / Giải đố / Zelda-like","Steam Summer Sale 2026",1,1,1,2,1,2,"~12h. Cáo nhỏ không biết mình là ai. Manual viết bằng ngôn ngữ không đọc được — bạn tự giải mã. 1–1.5h/dungeon. Rất dễ tạo cảm giác 'sắp hiểu ra rồi'.",true],
-  ["Witchfire","Dark fantasy FPS roguelite / Hơi hướng Soulslike","Steam Summer Sale 2026",1,2,0,2,2,2,"Early Access (1.0 cuối 2026). Dark fantasy FPS roguelite. 20–40 phút/mission — dừng sau mission rất gọn. Gunfeel đã rất rõ. Soulslike về phản xạ — không phải game lúc đã mệt."],
+  ["Witchfire","Dark fantasy FPS roguelite / Hơi hướng Soulslike","Steam Summer Sale 2026",1,2,0,2,2,2,"Early Access (1.0 cuối 2026). Dark fantasy FPS roguelite. 20–40 phút/mission — dừng sau mission rất gọn. Gunfeel đã rất rõ. Soulslike về phản xạ — không phải game lúc đã mệt.. Có Việt Hóa."],
   ["Ultros","Metroidvania / Loop-based adventure","Steam Summer Sale 2026",1,2,1,1,1,1,"~11h. Metroidvania màu gắt, loop-based — mỗi vòng thay đổi thế giới. 45–60 phút/phiên. Cá tính mạnh, lạ, không hợp tất cả."],
-  ["Tails of Iron","Dark fantasy action RPG 2D / Soulslike-lite","Steam Summer Sale 2026",2,2,1,1,1,2,"~7–8h. Chuột hoàng gia, ếch xâm lăng. Doug Cockle kể như truyện cổ tích tối. Dodge-parry, craft gear, tiến về phía trước. 1–1.5h/boss area. Không phải game lúc đã đuối.",true],
-  ["A Short Hike","Khám phá / Phiêu lưu / Cozy","Steam Summer Sale 2026",2,2,2,1,2,2,"~2.5h. Leo núi không có combat. Lên đỉnh để bắt sóng điện thoại. Auto-save liên tục — 20 phút hay 2 tiếng, không khác nhau. Dừng lúc nào cũng không mất nhịp. 99% Steam.",true],
+  ["Tails of Iron","Dark fantasy action RPG 2D / Soulslike-lite","Steam Summer Sale 2026",2,2,1,1,1,2,"~7–8h. Chuột hoàng gia, ếch xâm lăng. Doug Cockle kể như truyện cổ tích tối. Dodge-parry, craft gear, tiến về phía trước. 1–1.5h/boss area. Không phải game lúc đã đuối. Có Việt Hóa.",true],
+  ["A Short Hike","Khám phá / Phiêu lưu / Cozy","Steam Summer Sale 2026",2,2,2,1,2,2,"~2.5h. Leo núi không có combat. Lên đỉnh để bắt sóng điện thoại. Auto-save liên tục — 20 phút hay 2 tiếng, không khác nhau. Dừng lúc nào cũng không mất nhịp. 99% Steam. Có Việt Hóa.",true],
   ["Donut County","Puzzle vật lý / Hài / Casual","Steam Summer Sale 2026",2,2,2,1,2,1,"~1.5–2h. Bạn là một cái hố đất. Hút mọi thứ vào, hố càng lớn. 3–10 phút/chapter — điểm dừng ngắn nhất danh sách. Không fail state. Cùng publisher với GRIS và What Remains of Edith Finch.",true],
   ["Downwell","Arcade roguelite / Action platformer","Steam Summer Sale 2026",2,1,1,2,2,1,"15–30 phút/run. Rơi xuống giếng sâu bằng súng ủng. Gần như không có text — không cần đọc gì để chơi. Dừng sau mỗi run rất tự nhiên. Devolver Digital. 1 dev người Nhật."],
   ["Momodora: Reverie Under the Moonlight","Metroidvania 2D / Dark fantasy","Steam Summer Sale 2026",2,2,0,1,1,1,"~4–6h. Metroidvania pixel art dark fantasy. Boss cần học nhịp — không spam đòn được. 30–45 phút/zone. Đòi phải thật sự tỉnh khi ngồi xuống. 1 dev từ Brazil. 92% Steam."],
@@ -912,26 +920,26 @@ const RAW = [
 ["VOIDIGO","Roguelite bắn súng / Twin-stick shooter","Steam Summer Sale 2026",1,1,0,2,2,1,"~10–20h. Roguelite bắn súng — boss không đứng chờ, nó chạy ngược lại săn bạn. Gần như không text. 30–45 phút/run, dừng rất sạch. Không hợp lúc quá mệt. 96% Steam."],
 ["Laika: Aged Through Blood","Motorvania / Hành động xe máy","Steam Summer Sale 2026",1,1,0,1,1,2,"~10–15h. Cưỡi xe máy, deflect đạn giống Sekiro nhưng đang wheelie. Người mẹ chó tìm con trong thế giới tận thế do chim cai trị. Cần session 1h+ để vào guồng. 92% Steam."],
 ["Nine Sols","Metroidvania / Soulslike 2D / Action parry","Steam Summer Sale 2026",1,2,0,2,1,2,"~20–25h. Taopunk — Sekiro-style parry, hand-drawn. RedCandleGames (Detention, Devotion). Việt hóa cộng đồng chất lượng tốt. Boss rất khó — cần muscle memory. 95% Steam, gần 20K review.",true],
-["Hollow Knight","Metroidvania / Soulslike 2D / Khám phá","Steam Summer Sale 2026",0,2,0,1,1,2,"~40h+. Vương quốc côn trùng Hallownest đã sụp đổ. Lore ẩn trong item, NPC, môi trường. Bench nhiều nhưng 'thêm một bench nữa thôi' syndrome rất thật. Dễ mất context nếu dừng lâu. 97% Steam."],
+["Hollow Knight","Metroidvania / Soulslike 2D / Khám phá","Steam Summer Sale 2026",0,2,0,1,1,2,"~40h+. Vương quốc côn trùng Hallownest đã sụp đổ. Lore ẩn trong item, NPC, môi trường. Bench nhiều nhưng 'thêm một bench nữa thôi' syndrome rất thật. Dễ mất context nếu dừng lâu. 97% Steam.. Có Việt Hóa."],
 ["MULLET MADJACK","FPS tốc độ cao / Roguelite","Cyberpunk Fest 2026",2,1,0,1,1,2,"~2–4h. Giết mỗi 10 giây hoặc chết — FPS anime retro roguelite. Checkpoint sau mỗi 10 tầng. Không grind. PC/Switch."],
 ["DYSTOPIKA","Sandbox xây thành phố / Cozy","Cyberpunk Fest 2026",2,2,2,2,2,1,"Không có end. Xây thành phố cyberpunk — không thu thuế, không thất bại. Autosave tự do. 95% Steam. Score cao nhất nhóm Cyberpunk Fest.",true],
 ["BLADE CHIMERA","Metroidvania / Hành động 2D","Cyberpunk Fest 2026",1,2,1,1,1,2,"~6–8h chính. Osaka tương lai — kiếm Lux kéo vật thể từ quá khứ. Save room + fast travel. Không grind. Team Ladybug. PC/Switch."],
 ["ENTER THE CHRONOSPHERE","Roguelite chiến thuật / Bullet Hell","Cyberpunk Fest 2026",2,1,1,1,1,2,"~30–45 phút/run. Bullet hell nhưng thế giới đứng yên khi bạn không hành động — không cần reflex. Early Access. PC/macOS."],
 ["HUNTDOWN: OVERTIME","Hành động / Roguelite / Bắn súng","Cyberpunk Fest 2026",2,1,0,2,1,1,"~25–45 phút/run. Prequel Huntdown — chết thêm chrome. Có Save & Quit. Early Access. Easy Trigger / Coffee Stain. PC."],
 ["NEON INFERNO","Hành động 2D / Run-and-gun","Cyberpunk Fest 2026",2,1,0,2,1,1,"~2–3h. Mix Contra + Wild Guns — bắn cả tiền/hậu cảnh. 6 mission. Co-op 2 người tại chỗ. PC/PS/Xbox/Switch."],
-["KIBORG","Roguelite / Đánh cận chiến / Hành động","Cyberpunk Fest 2026",2,1,0,1,1,2,"~30–45 phút/run. Nhà tù hành tinh — thay bộ phận cơ thể mỗi lần chết. Combat như Sifu + roguelite. Free prologue KIBORG: Arena. PC/PS5/Xbox."],
+["KIBORG","Roguelite / Đánh cận chiến / Hành động","Cyberpunk Fest 2026",2,1,0,1,1,2,"~30–45 phút/run. Nhà tù hành tinh — thay bộ phận cơ thể mỗi lần chết. Combat như Sifu + roguelite. Free prologue KIBORG: Arena. PC/PS5/Xbox.. Có Việt Hóa."],
 ["METAL EDEN","FPS tuyến tính / Hành động tốc độ cao","Cyberpunk Fest 2026",2,2,0,1,1,1,"~5–6h. Parkour FPS orbital city — dash, wall-run, grapple, rút core địch. 8 mission. Checkpoint-based. Demo có sẵn. PC/PS5/Xbox."],
 ["ASCEND TO ZERO","Action Roguelike / Survivors-like","Cyberpunk Fest 2026",2,1,1,1,1,2,"~13h chính/~30h+ endgame. Giết địch để kiếm thêm giây — thời gian là resource. Đừng để '30 giây' đánh lừa. Xbox Game Pass. PC/Xbox."],
 ["TRANSISTOR","Action RPG / Chiến đấu có tạm dừng","Cyberpunk Fest 2026",2,2,1,0,1,2,"~5–6h. Supergiant Games — Turn mode tạm dừng để lên kế hoạch trước khi đánh. Kỹ năng dùng được nhiều cách. Tiếng Anh ẩn dụ nhiều — rào cản lớn nhất. PC/PS4/Switch."],
 ["THE SPELL BRIGADE","Survivors-like / Co-op Roguelite","Thể Loại Tê Chọn",2,1,2,2,1,1,"~15–30 phút/run. Early Access. Survivors-like co-op tối đa 4 người — hoặc solo. Mỗi run tương đương 1 tập phim ngắn. Chờ bản launch đầy đủ. PC."],
-["EVERYTHING IS CRAB","Evolution Roguelite","Thể Loại Tê Chọn",2,1,1,2,1,1,"~20–40 phút/run. Tiến hóa con cua qua nhiều thế hệ — mỗi run là 1 vòng đời mới. Không grind. Concept đủ lạ để đáng thử. PC."],
+["EVERYTHING IS CRAB","Evolution Roguelite","Thể Loại Tê Chọn",2,1,1,2,1,1,"~20–40 phút/run. Tiến hóa con cua qua nhiều thế hệ — mỗi run là 1 vòng đời mới. Không grind. Concept đủ lạ để đáng thử. PC.. Có Việt Hóa."],
 ["REAP AND RUSH","Survivors-like / Chinese Folklore","Thể Loại Tê Chọn",2,1,2,1,1,1,"~20–40 phút/run. Survivors-like nền văn hóa dân gian Trung Quốc — gặt linh hồn, rush về kịp deadline. Tiếng Anh đơn giản. PC."],
 ["PASS THE FEAR","Bullet Hell / Roguelite","Thể Loại Tê Chọn",2,1,0,2,1,1,"~30–45 phút/run. Bullet hell nhẹ kinh dị — mỗi run ra quyết định build liên tục. Cần tập trung, nhưng run ngắn. PC."],
 ["THE GATE MUST STAND","Tower Defense + Hack-and-Slash Roguelite","Thể Loại Tê Chọn",2,1,0,1,1,1,"~30–60 phút/run. Bảo vệ cổng — vừa tự tay chiến đấu vừa xây tháp phòng thủ. Hai vai trò trong một. Tiếng Anh vừa. PC."],
 ["QUASIMORPH","Tactical Roguelite RPG / Sci-fi","Thể Loại Tê Chọn",0,1,0,0,1,2,"~60–120 phút/run. 30–60 giờ total. Nặng nhất danh sách — tactical sci-fi, text nhiều, không TV. Đọng lại lâu. Không phải game chơi 30 phút rồi để đó. PC."],
 ["SEPHIRIA","Action Roguelite / Inventory Tetris","Thể Loại Tê Chọn",0,1,1,1,1,2,"~60 phút/run. Quản lý túi đồ kiểu Tetris — mỗi item chiếm ô khác nhau. Action roguelite nhưng thinking nhiều hơn reflex. Run hơi dài. PC."],
 ["SYNTHETIK 2","Tactical Shooter Roguelite / EA","Thể Loại Tê Chọn",1,1,0,2,1,1,"~60–90 phút/run. Tactical top-down shooter — Early Access. Tiếng Anh đơn giản. Run dài, cần tập trung cao. PC."],
-["REALM OF INK","Action Roguelite / Hades-like","Thể Loại Tê Chọn",2,1,1,1,1,2,"~30–60 phút/run. Hades-like phong cách tranh mực Trung Quốc — combat mượt, visual đẹp. Save giữa các khu vực. Đọng lại lâu. PC/Switch."],
+["REALM OF INK","Action Roguelite / Hades-like","Thể Loại Tê Chọn",2,1,1,1,1,2,"~30–60 phút/run. Hades-like phong cách tranh mực Trung Quốc — combat mượt, visual đẹp. Save giữa các khu vực. Đọng lại lâu. PC/Switch.. Có Việt Hóa."],
 ["THE LAST STAND: AFTERMATH","Narrative Roguelite","Thể Loại Tê Chọn",1,1,1,1,2,2,"~20–60 phút/survivor. Mỗi nhân vật là 1 survivor — chết là xong, chuyển sang người tiếp theo. Narrative zombie roguelite. PC/PS/Xbox."],
 ["SHARDS OF ORDER","Card RPG / Party RPG","Party RPG Fest 2026",1,2,1,1,2,2,"~10h. Card RPG không phải roguelite — thua không mất save. Time-based card system, party of 3 dùng chung bộ bài. Demo miễn phí. 90% VP (564). PC."],
 ["PEOPLE OF NOTE","Musical Turn-based RPG","Party RPG Fest 2026",1,2,1,0,1,2,"~15h. Combat = biểu diễn âm nhạc — chọn rhythm quyết định party attack bao nhiêu lần. Annapurna Interactive. Tiếng Anh dialogue-heavy. PC/PS5/Xbox/Switch 2."],
@@ -939,20 +947,20 @@ const RAW = [
 ["DARK DEITY 2","Tactical RPG / Fire Emblem-like","Party RPG Fest 2026",1,1,1,0,2,2,"~23h. Fire Emblem indie — 20 heroes, 45 branching classes. Dừng sạch sau mỗi mission. Thử Dark Deity 1 trước — thường free. 89% VP (1,579). PC/Switch/PS5/Xbox."],
 ["FORSWORN","Dark Fantasy Roguelite Tactical","Party RPG Fest 2026",2,0,1,0,1,1,"Roguelite tactical — co-op tối đa 4 người với simultaneous turns, không ai chờ lượt ai. Solo được, nhưng không phải điểm mạnh. Demo có sẵn. PC."],
 ["WILDERMYTH","Procedural Tactical RPG","Party RPG Fest 2026",2,2,1,0,2,2,"Campaign đầu 3–5h — câu chuyện hoàn chỉnh. Nhân vật có thể mythic merge vĩnh viễn. 97%+ OP (2021). Save anytime. PC/PS/Xbox/Switch."],
-["SOLASTA II","D&D CRPG Turn-based","Party RPG Fest 2026",1,1,0,2,1,2,"~10–15h (EA Act 1). CRPG D&D 5E — có tiếng Việt. Đòi learning curve thật: spell slots, action economy. Early Access. PC."],
-["DARKEST DUNGEON II","Gothic Roguelite Party RPG","Party RPG Fest 2026",2,0,1,0,1,2,"Run 3–6h. Lính chết vì hoảng loạn, không phải hết HP — stress system độc nhất. Kingdoms mode (DLC miễn phí) có campaign structure. Sale thường 50–69%. PC/PS/Xbox/Switch."],
+["SOLASTA II","D&D CRPG Turn-based","Party RPG Fest 2026",1,1,0,2,1,2,"~10–15h (EA Act 1). CRPG D&D 5E — có tiếng Việt. Đòi learning curve thật: spell slots, action economy. Early Access. PC.. Có Việt Hóa."],
+["DARKEST DUNGEON II","Gothic Roguelite Party RPG","Party RPG Fest 2026",2,0,1,0,1,2,"Run 3–6h. Lính chết vì hoảng loạn, không phải hết HP — stress system độc nhất. Kingdoms mode (DLC miễn phí) có campaign structure. Sale thường 50–69%. PC/PS/Xbox/Switch.. Có Việt Hóa."],
 ["STARFINDER: AFTERLIGHT","Sci-fi CRPG Turn-based","Party RPG Fest 2026",1,2,0,0,1,2,"Demo 2h miễn phí. Sci-fi CRPG dựa trên Starfinder 2E. Voice cast: Neil Newbon (BG3), Roger Clark (RDR2). EA Q4 2026 — watchlist. PC."],
 ["OUTCAST TALES","Narrative Tactical Roguelite","Party RPG Fest 2026",2,1,1,1,1,2,"Demo only — full game chưa ra. Party of 3 — relationships giữa nhân vật ảnh hưởng combat và kết cục. Save carry-over khi full game ra. PC. Watchlist."],
 ["BEHIND THE FRAME: THE FINEST SCENERY","Giải đố / Kể chuyện","Thể Loại Tê Chọn",2,2,2,1,1,1,"~2h. Thư giãn hoàn toàn — quan sát, giải đố nhẹ, không có áp lực thời gian. Visual đẹp, câu chuyện gọn. PC/Switch/Mobile.",true],
 ["NEKO ODYSSEY","Phiêu lưu / Khám phá","Thể Loại Tê Chọn",2,2,2,1,1,1,"~4–6h. Tìm và chụp ảnh mèo — khám phá tự do, không áp lực. Dừng bất cứ lúc nào. PC.",true],
-["THE REWINDER","Giải đố / Thần thoại TQ","Thể Loại Tê Chọn",2,2,1,0,1,2,"~5–6h. Giải đố dựa trên thần thoại dân gian Trung Quốc — theo từng linh hồn, không lặp lại. Text nhiều, không TV. PC.",true],
-["LITTLE MISFORTUNE","Point-and-click / Mature 17+","Thể Loại Tê Chọn",2,2,2,1,1,2,"~3h. 17+ — nội dung về cái chết và bạo lực được xử lý tinh tế qua lăng kính trẻ thơ. Point-and-click, thao tác rất thấp. PC/Switch.",true],
+["THE REWINDER","Giải đố / Thần thoại TQ","Thể Loại Tê Chọn",2,2,1,0,1,2,"~5–6h. Giải đố dựa trên thần thoại dân gian Trung Quốc — theo từng linh hồn, không lặp lại. Text nhiều, không TV. PC. Có Việt Hóa.",true],
+["LITTLE MISFORTUNE","Point-and-click / Mature 17+","Thể Loại Tê Chọn",2,2,2,1,1,2,"~3h. 17+ — nội dung về cái chết và bạo lực được xử lý tinh tế qua lăng kính trẻ thơ. Point-and-click, thao tác rất thấp. PC/Switch. Có Việt Hóa.",true],
 ["THANK GOODNESS YOU'RE HERE!","Phiêu lưu hài / Comedy","Thể Loại Tê Chọn",2,2,2,0,1,1,"~2.5h. British accent đặc và wordplay cao — rào cản ngôn ngữ thật sự dù game ngắn. Comedy tình huống, từng cảnh là 1 sketch. PC/Switch.",true],
-["THE BERLIN APARTMENT","Walking Sim / Lịch sử","Thể Loại Tê Chọn",2,2,1,0,1,2,"~3–4h. Nhiều câu chuyện trong cùng 1 căn hộ Berlin qua nhiều thập kỷ — cấu trúc từng tập, dừng được sau mỗi câu chuyện. Text nhiều. PC.",true],
-["THE WILD AT HEART","Phiêu lưu / Quản lý sinh vật","Thể Loại Tê Chọn",1,2,1,1,1,2,"~11.5h. Co-op 2 người hoặc solo — quản lý đội Spritelings, khám phá rừng bí ẩn. Lưu tại trại. PC/Switch.",true],
-["AS LONG AS YOU'RE HERE","Walking Sim / Narrative","Thể Loại Tê Chọn",2,2,2,0,1,2,"~1h. Chủ đề Alzheimer — đi cùng người thân qua ký ức dần phai. Nên chơi trọn 1 buổi không gián đoạn. PC.",true],
+["THE BERLIN APARTMENT","Walking Sim / Lịch sử","Thể Loại Tê Chọn",2,2,1,0,1,2,"~3–4h. Nhiều câu chuyện trong cùng 1 căn hộ Berlin qua nhiều thập kỷ — cấu trúc từng tập, dừng được sau mỗi câu chuyện. Text nhiều. PC. Có Việt Hóa.",true],
+["THE WILD AT HEART","Phiêu lưu / Quản lý sinh vật","Thể Loại Tê Chọn",1,2,1,1,1,2,"~11.5h. Co-op 2 người hoặc solo — quản lý đội Spritelings, khám phá rừng bí ẩn. Lưu tại trại. PC/Switch. Có Việt Hóa.",true],
+["AS LONG AS YOU'RE HERE","Walking Sim / Narrative","Thể Loại Tê Chọn",2,2,2,0,1,2,"~1h. Chủ đề Alzheimer — đi cùng người thân qua ký ức dần phai. Nên chơi trọn 1 buổi không gián đoạn. PC. Có Việt Hóa.",true],
 ["HAROLD HALIBUT","Phiêu lưu / Handmade","Thể Loại Tê Chọn",1,2,1,0,1,2,"~10–13h. Thế giới stop-motion handmade — từng nhân vật được làm tay. Pacing chậm có chủ ý. Text nhiều. PC/PS/Xbox."],
-["AND ROGER","Visual Novel / 3 chương","Thể Loại Tê Chọn",2,2,2,1,1,2,"~1h. 3 chương về mất mát — tương tác tối giản, không label nút nào. Câu chuyện đọng lại. PC.",true],
+["AND ROGER","Visual Novel / 3 chương","Thể Loại Tê Chọn",2,2,2,1,1,2,"~1h. 3 chương về mất mát — tương tác tối giản, không label nút nào. Câu chuyện đọng lại. PC. Có Việt Hóa.",true],
 ["GHOST RECON WILDLANDS","Tactical Shooter / Open World","Thể Loại Tê Chọn",1,1,1,1,2,1,"Open world tactical — AI team thay co-op khi chơi solo. Tự chọn nhiệm vụ, tự lưu sau nhiệm vụ. Sale thường 70–80%. PC/PS/Xbox."],
 ["PATHOGENIC","Action Roguelite / Twin-stick","Thể Loại Tê Chọn",1,2,1,1,2,2,"~20–45 phút/run. Design solo-first — co-op chỉ là thêm người chứ không cần. 2026. PC.",true],
 ["DARKSIDERS GENESIS","Action Adventure / Isometric","Thể Loại Tê Chọn",1,1,1,1,1,1,"~11h. Prequel series Darksiders — isometric thay vì camera quen thuộc. Co-op 2 người hoặc solo tốt. PC/PS/Xbox/Switch."],
@@ -961,7 +969,7 @@ const RAW = [
 ["BLAZBLUE: ENTROPY EFFECT X","Action Roguelite / Anime 2D","Thể Loại Tê Chọn",1,2,0,1,2,1,"~30–45 phút/run. Action roguelite anime — cần tập trung cao, reflex nhanh. Update X 2026 thêm nội dung đáng kể. PC."],
 ["WASTELAND 3","CRPG / Tactical Turn-based","Thể Loại Tê Chọn",0,1,1,0,2,2,"~40h. Post-apocalyptic CRPG — turn-based tactical. Co-op 2 người hoặc solo. Text nhiều. Sale thường 80%. PC/PS/Xbox."],
 ["WARHAMMER: VERMINTIDE 2","Horde Slasher / FPS Co-op","Thể Loại Tê Chọn",1,1,1,1,1,1,"~30h. Horde slasher FPS — co-op 4 người hoặc solo với bot. Mỗi nhiệm vụ hoàn chỉnh. PC/PS/Xbox."],
-["SNIPER ELITE 5","Tactical Stealth / WWII","Thể Loại Tê Chọn",1,1,1,1,2,2,"~15h. WWII tactical stealth — solo có thể lưu giữa nhiệm vụ. Co-op 2 người. PC/PS/Xbox.",true],
+["SNIPER ELITE 5","Tactical Stealth / WWII","Thể Loại Tê Chọn",1,1,1,1,2,2,"~15h. WWII tactical stealth — solo có thể lưu giữa nhiệm vụ. Co-op 2 người. PC/PS/Xbox. Có Việt Hóa.",true],
 ["REMNANT II","Action RPG / Soulslike","Thể Loại Tê Chọn",1,1,1,1,1,2,"~25–35h. Soulslike với world procedural — mỗi playthrough khác nhau. Co-op 3 người hoặc solo. PC/PS/Xbox."],
 ];
 
@@ -1303,6 +1311,7 @@ let activeGenre = "all";
 let activeSearch = "";
 let activeSearchRaw = "";
 let activeSort = "best";
+let filterVH = false;
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1348,6 +1357,12 @@ function selectGenre(btn) {
   renderGames();
 }
 
+function toggleVH(btn) {
+  filterVH = !filterVH;
+  btn.classList.toggle('active', filterVH);
+  renderGames();
+}
+
 function toggleScores(btn) {
   const section = btn.closest(".score-section");
   const isCollapsed = section.classList.toggle("collapsed");
@@ -1372,6 +1387,10 @@ function renderGames() {
 
   if (activeGenre !== "all") {
     filtered = filtered.filter(g => g.genre === activeGenre);
+  }
+
+  if (filterVH) {
+    filtered = filtered.filter(g => g.note && g.note.includes('Có Việt Hóa'));
   }
 
   if (activeSearch) {
@@ -1403,7 +1422,7 @@ function renderGames() {
   document.getElementById('count').textContent = filtered.length;
 
   const label = header.querySelector('.results-label');
-  if (activeTime === 999 && activeGenre === "all" && !activeSearch) {
+  if (activeTime === 999 && activeGenre === "all" && !activeSearch && !filterVH) {
     label.innerHTML = "game trong<br>database";
   } else {
     label.innerHTML = "game phù hợp<br>với bộ lọc";
